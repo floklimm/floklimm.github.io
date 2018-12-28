@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Florian Klimm Research</title>
+  <meta charset="utf-8" />
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" type="png" href="images/icon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="png" href="images/icon/favicon-16x16.png" sizes="16x16" />
+
+<!-- Loadign the D3 library -->
+    <script type="text/javascript" src="d3.v4.min.js">  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109140890-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109140890-1');
+  </script>
+
+
+  <style>
+
+  .links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    stroke-width: 2px;
+  }
+
+  .nodes circle {
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+
+
+  }
+
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <header class="container">
+      <div class="row">
+        <h1 class="col-sm-3">Florian Klimm</h1>
+
+    <ul class="nav nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="papers.html">Papers</a></li>
+      <li class="active"><a href="code_and_data.html">Code & Data</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="kellogg.html">Kellogg College MCR</a></li>
+      <li><a href="funding.html">Funding</a></li>
+    </ul>
+      </div>
+        </header>
+
+
+    <section class="container">
+
+<div class="row vertical-align">
+        <div class="col-sm-12">
+
+  <h3 > Illustrating Collaboration Networks with D3 </h3>
+
+<p> You can find the code on <a href="https://github.com/floklimm/collaborationNetworkIllustration"> GitHub</a>. Below I show an example, which was created with this python script. It shows the publications written by the OPIG research group. As Charlotte Deane, the head of the group, is co-author of almost all papers I removed this ego node.</p>
+
+<p> You can drag the nodes around and also double-click them to get a link to the scientist or the paper.</p>
+
+<p> Back to the <a href="./networkIllustration.html"> main</a>.  </p>
+
+
+<svg width="800" height="400" id="area1"></svg>
+<script type="text/javascript" src="forceLayoutOPIG.js">  </script>
+</div>
+
+
+
+    </div>
+
+
+
+
+
+
+  </section>
+
+
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-3">&copy; 2016 F Klimm <br>
+        <script language="javascript">
+        months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var theDate = new Date(document.lastModified);
+        theDate.setTime((theDate.getTime()) )
+        with (theDate) {
+        document.write("<i>Last updated "+getDate()+' '+months[getMonth()]+' '+getFullYear()+' '+getHours()+':'+getMinutes()+" GMT</i>.")
+        }
+        </script>
+  </p>
+
+  <p class="col-sm-5">
+  Please email <a href="mailto:f.klimm@gmail.com" target="_top">f.klimm@gmail.com </a> for feedback and comments.
+  </p>
+
+
+        <div class="col-sm-4">
+          <!-- <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"> -->
+          <a href="http://www.sabsidc.ox.ac.uk/"><img src="./pic/UpdatedSABSLogo1.png" class="logo" alt="DTC logo"/</a>
+      </div>
+
+
+
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

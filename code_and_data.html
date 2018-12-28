@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Florian Klimm Research</title>
+  <meta charset="utf-8" />
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" type="png" href="images/icon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="png" href="images/icon/favicon-16x16.png" sizes="16x16" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109140890-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109140890-1');
+  </script>
+
+<script type="text/javascript" src="d3.v4.min.js">  </script>
+
+</head>
+
+<body>
+
+
+  <header class="container">
+      <div class="row">
+        <h1 class="col-sm-3">Florian Klimm</h1>
+
+    <ul class="nav nav-tabs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="papers.html">Papers</a></li>
+      <li class="active"><a href="code_and_data.html">Code & Data</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="kellogg.html">Kellogg College MCR</a></li>
+      <li><a href="funding.html">Funding</a></li>
+    </ul>
+      </div>
+        </header>
+
+  <!--
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Homemade Goods</h2>
+          <h3>This Year's Best</h3>
+          <a class="btn btn-primary" href="#">See all</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container">
+
+<div class="row vertical-align">
+        <div class="col-sm-3">
+            <img src="./pic/contagion_map.jpg">
+      </div>
+
+      <div class="col-sm-9">
+            <h3  >Contagion Maps (Matlab and C++)</h3>
+            <p>
+              As used for "Topological data analysis of contagion maps for examining spreading processes on networks", please find code <a href="https://github.com/taylordr/WTMmaps "> here</a>.
+            </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="row vertical-align">
+            <div class="col-sm-3">
+                <!-- <img src="./pic/isomorphism_cut.pdf"> -->
+                <img src="./pic/isomorphism_cut.jpg">
+          </div>
+
+          <div class="col-sm-9">
+                <h3  >Teaching Material `Networks and Complex Systems'</h3>
+                <p>
+                   Benjamin F. Maier and I tought a two-week summer school for high-school students and the teaching material is available on <a href="https://github.com/floklimm/DSAMaterialNetworks"> GitHub</a>.
+                </p>
+
+          </div>
+
+        </div>
+
+        <div class="row vertical-align">
+                <div class="col-sm-3">
+                    <!-- <img src="./pic/isomorphism_cut.pdf"> -->
+                    <svg width="200" height="100" id="area1"></svg>
+                    <script type="text/javascript" src="forceLayoutTooltipSmall.js">  </script>
+              </div>
+
+              <div class="col-sm-9">
+                    <h3  >Illustrating Collaboration Networks with D3</h3>
+                    <p>
+                       I created a python script that takes a bibliography file and creates a collaboration network in JSON format from it. This can then be illustrated as an interactive network with the JavaScript library D3. Find the code on <a href="https://github.com/floklimm/collaborationNetworkIllustration"> GitHub</a> and some examples <a href="http://www.dtc.ox.ac.uk/people/14/klimmf/networkIllustration.html"> here</a>.
+                    </p>
+
+              </div>
+
+            </div>
+
+
+        <div class="row vertical-align">
+                <div class="col-sm-3">
+                    <!-- <img src="./pic/isomorphism_cut.pdf"> -->
+                    <img src="./pic/klimm_aims_image.jpg">
+              </div>
+
+              <div class="col-sm-9">
+                    <h3  >Illustrating Networks in Latex with tikz</h3>
+                    <p>
+                       This excellent library is not created by myself but J&uumlrgen Hackl. You can find it <a href="https://github.com/hackl/tikz-network"> here</a>. It is particularly well-suited for multilayer networks.
+                    </p>
+
+              </div>
+
+            </div>
+
+
+  </section>
+
+
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-3">&copy; 2018 F Klimm <br>
+        <script language="javascript">
+        months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var theDate = new Date(document.lastModified);
+        theDate.setTime((theDate.getTime()) )
+        with (theDate) {
+        document.write("<i>Last updated "+getDate()+' '+months[getMonth()]+' '+getFullYear()+' '+getHours()+':'+getMinutes()+" GMT</i>.")
+        }
+        </script>
+  </p>
+
+  <p class="col-sm-5">
+  Please email <a href="mailto:f.klimm@gmail.com" target="_top">f.klimm@gmail.com </a> for feedback and comments.
+  </p>
+
+
+        <div class="col-sm-4">
+          <!-- <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"> -->
+          <a href="http://www.sabsidc.ox.ac.uk/"><img src="./pic/UpdatedSABSLogo1.png" class="logo" alt="DTC logo"/</a>
+      </div>
+
+
+
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

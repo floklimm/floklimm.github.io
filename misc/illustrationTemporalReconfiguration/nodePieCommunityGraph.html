@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    .links line {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    text {
+        font-size: 1em;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+    }
+</style>
+
+<p> Each pie chart represents a community and indicates to which of the six layers the nodes in this community belong. </p>
+
+<p>
+Developmental stages:
+<font color="#6baed6">Blastula </font>
+<font color="#9ecae1">Gastrula </font>
+<font color="#c6dbef">Embryo </font>
+<font color="#e6550d">Nematode </font>
+<font color="#fd8d3c">Prime Adult</font>
+<font color="#fdae6b">Life Cycle </font>
+
+
+
+
+</p>
+
+
+
+<svg width="1260" height="600"></svg>
+
+<center>
+<div style="width:400px;">
+
+    <input id="omega" type="range" min="-2" max="2" step="0.1" value="0" class="inputwidth"/>
+    <span class="inputlabel"><i>interlayer strength log &#969;</i>&nbsp;= <label id="showomega"></label></span><br/><br/>
+</div>
+
+<div style="width:400px;">
+
+    <input id="gamma" type="range" min="-2" max="1" step="0.2" value="0" class="inputwidth"/>
+    <span class="inputlabel"><i>resolution parameter log &#947;</i>&nbsp;= <label id="showgamma"></label></span><br/><br/>
+</div>
+
+</center>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script src="node-pie-community.js"></script>
+<script src="createCommunityNetwork.js"></script>
+
+<script>
+            document.getElementById('omega').value = omega;
+            document.getElementById('showomega').innerHTML = omega.value;
+
+            document.getElementById('omega').addEventListener('change', function() {
+                omega = this.valueAsNumber;
+                updateNetwork(omega,gamma);
+            });
+            document.getElementById('omega').addEventListener('input', function() {
+                document.getElementById('showomega').innerHTML = this.valueAsNumber;
+            });
+</script>
+
+<script>
+            document.getElementById('gamma').value = gamma;
+            document.getElementById('showgamma').innerHTML = gamma.value;
+
+            document.getElementById('gamma').addEventListener('change', function() {
+                gamma = this.valueAsNumber;
+                updateNetwork(omega,gamma);
+            });
+            document.getElementById('gamma').addEventListener('input', function() {
+                document.getElementById('showgamma').innerHTML = this.valueAsNumber;
+            });
+</script>
+
+
+
+
+
+<script>
+omega = 0
+gamma=0
+//alert(omega)
+createNetwork(omega,gamma)
+
+</script>
