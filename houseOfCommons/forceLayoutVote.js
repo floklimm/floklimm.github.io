@@ -1,4 +1,4 @@
-let JSONFILENAME = "voteFile.json"
+let JSONFILENAME2 = "voteFile.json"
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
@@ -24,7 +24,7 @@ var simulation = d3.forceSimulation()
         // add a legend
 
 
-d3.json(JSONFILENAME, function(error, graph) {
+d3.json(JSONFILENAME2, function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
