@@ -1,4 +1,4 @@
-let JSONFILENAME = "voteFileAprilwPM.json"
+let JSONFILENAME = "voteFileApril1.json"
 
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
