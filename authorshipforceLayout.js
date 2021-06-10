@@ -69,10 +69,10 @@ d3.json(JSONFILENAME, function(error, graph) {
          //increase node size
          d3.selectAll("circle").transition()
          .duration(400)
-         .attr("r", 10);
+         .attr("r", 7);
          d3.select(this).transition()
           .duration(400)
-          .attr("r", 15);
+          .attr("r", 10);
 
 
 
