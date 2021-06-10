@@ -3,6 +3,17 @@
 
 let JSONFILENAME = "fklimm.json"
 
+//
+// svg = d3.select("body")
+//          .append("svg")
+//          .attr("width", width)
+//          .attr("height", height)
+//          .call(d3.behavior.zoom().x(x).y(y).scaleExtent([1, 8]).on("zoom", zoom))
+//          .append("g");
+//
+// function zoom() {
+//     svg.attr("transform","translate("+ d3.event.translate+") scale("+d3.event.scale+")");
+// }
 
 
 var svg = d3.select("svg"),
@@ -37,7 +48,7 @@ d3.json(JSONFILENAME, function(error, graph) {
     .selectAll("circle")
     .data(graph.nodes)
     .enter().append("circle")
-    .attr("r", 10)
+    .attr("r", 7)
     .attr("fill", function(d) { return color(d.group); })
     .on("mouseover", function(d) {
       // make attached edges red and thicker
