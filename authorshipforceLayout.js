@@ -25,7 +25,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody().distanceMin(20).distanceMax(100).strength(-30))
+    .force("charge", d3.forceManyBody().distanceMin(25).distanceMax(100).strength(-30))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 // Define the div for the tooltip
@@ -48,7 +48,7 @@ d3.json(JSONFILENAME, function(error, graph) {
     .selectAll("circle")
     .data(graph.nodes)
     .enter().append("circle")
-    .attr("r", 7)
+    .attr("r", 5)
     .attr("fill", function(d) { return color(d.group); })
     .on("mouseover", function(d) {
       // make attached edges red and thicker
@@ -69,10 +69,10 @@ d3.json(JSONFILENAME, function(error, graph) {
          //increase node size
          d3.selectAll("circle").transition()
          .duration(400)
-         .attr("r", 7);
+         .attr("r", 5);
          d3.select(this).transition()
           .duration(400)
-          .attr("r", 10);
+          .attr("r", 7);
 
 
 
